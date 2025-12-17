@@ -4,17 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Placement Tracker</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <script src="./assets/js/jQuery.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    
 
 </head>
-<body style="background-color: #6A46BC;">
-    <div class="container bg">
-        <h2>Welcome to Bootstrap course</h2>
-        <p>Let's start learning bootstrap</p>
-    </div>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Placement Tracker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="tasks.html">Tasks</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="progress.html">Progress</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container mt-4">
+            <h2 class="mb-4">Dashboard</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-bg-primary mb-3">
+                        <div class="card-body">
+                            <h5>Total Tasks</h5>
+                            <p class="fs-2">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-bg-success mb-3">
+                        <div class="card-body">
+                            <h5>Completed</h5>
+                            <p class="fs-2">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-bg-warning mb-3">
+                        <div class="card-body">
+                            <h5>Pending</h5>
+                            <p class="fs-2">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5>Motivation</h5>
+                    <p>Consistency beats intensity. Keep going!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+<script src="./assets/js/jQuery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
 </body>
 </html>
